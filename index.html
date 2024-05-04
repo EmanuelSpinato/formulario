@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="form-section">
+    <h1> HTML Forms</h1>
+    <div class="form-wrapper">
+        <form action="">
+            <div class="input-block">
+                <label for="firstname">Name</label>
+                <input type="text" name="firstname" value="First Name">
+            </div>
+
+            <div class="input-block">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lstname" value="Last Name">
+            </div>
+
+            <div class="input-block">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name= "login-email" value="email@dominio.com">
+            </div>
+
+            <div class="input-block">
+                <label for="password">Password</label>
+                <input type="password" id="login-password">
+            </div>
+
+            <div class="input-block-radius">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+            </div>
+
+            <div class="input-block-radius">
+                <input type="radio" id="famele" name="gender">
+                <label for="famele">Female</label>
+            </div>
+            <div class="input-block-radius">
+                <input type="radio" id="other" name="gender">
+                <label for="other">Other</label>
+            </div>
+            <hr>
+            <div class="input-block">
+                <label for="username">username</label>
+                <input type="text" name="username" pattern="[a-z] {1-15}" id="username">
+            </div>
+
+            <button type="submit" class="btn-signup">Sign-Up</button>
+
+
+        </form>
+    </div>
+</section>
+    
+<script src="script.js"></script>
+</body>
+</html>
